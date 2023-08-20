@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tlecss.css">
+    <title>Product Store</title>
+</head>
+<body>
+    <header>
+        <div class="slideshow-container">
+            <h1>Production</h1>
+            <h3>Carousel</h3>
+            <div class="mySlides">
+              <img src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha" alt="Image 1" width="150px">
+            </div>
+          
+            <div class="mySlides">
+              <img src="https://resource.logitech.com/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-carbon-gallery-1.png" alt="Image 2"width="200px">
+            </div>
+          
+            <div class="mySlides">
+              <img src="https://assets2.razerzone.com/images/pnx.assets/1c0086b0a6e4f10fb5336b509de738ce/razer-deathadder-v2-x-hyperspeed_500x500.png" alt="Image 3"width="150px">
+            </div>
+
+          </div>
+          
+          <script>
+            var slideIndex = 0;
+            showSlides();
+          
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1;
+              }
+              slides[slideIndex - 1].style.display = "block";
+              setTimeout(showSlides, 2000); 
+            }
+          </script>
+    </header>
+    
+    <section class="product-list">
+        
+        <div class="product">
+          
+            <img src="https://resource.logitech.com/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-carbon-gallery-1.png" alt="Product 1" width="350px">
+            <h2>Mouse logitech GPRO</h2>
+            <p>$49.99</p>
+            <p2>Logitech G ร่วมมือกับผู้เล่นระดับมืออาชีพ 50 คน เพื่อค้นหารูปทรงน้ำหนัก<br>และความรู้สึกที่สมบูรณ์แบบที่สุด
+                เมื่อรวมเข้ากับเทคโนโลยีไร้สาย LIGHTSPEED<br>และเซ็นเซอร์ HERO 25K ผลลัพธ์:นี่คือหนึ่งในเมาส์ยอดนิยมที่สุดในวงการอีสปอร์ต</p2>
+                <br><br>
+                <div class="yo">
+                  <input type="number" class="quantity" value="1" min="1">
+                  <button onclick="addToCart(this)">Add to Cart</button>
+              </div>
+        </div>
+        <div class="product">
+            <img src="https://sony.scene7.com/is/image/sonyglobalsolutions/wh-ch520_Primary_image?$categorypdpnav$&fmt=png-alpha" alt="Product 2" width="350px">
+            <h2>Headset</h2>
+            <p>$59.99</p>
+            <p2>-ฟังก์ชั่นระบบตัดเสียงรบกวนอัตโนมัติ Artificial Intelligence (AINC)<br>
+                -ตัดเสียงรบกวนผ่านเทคโนโลยี Dual Noise Sensor และโหมดเสียงรอบข้าง<br>
+                -Dual Noise Sensor ไมโครโฟนคู่สำหรับส่งเสียงไปด้านหน้าและด้านหลัง<br>
+                -โหมดเสียงรอบข้าง สามารถฟังเพลงในขณะที่ยังคงได้ยินเสียงรอบข้าง<br>
+                -แบตเตอรี่สามารถฟังเพลงได้นานถึง 35 ชั่วโมงต่อการชาร์จหนึ่งครั้ง</p2>
+                <br>
+                <br>
+                <div class="yo">
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+        </div>
+        
+        <br><div class="product">
+            <img src="https://assets2.razerzone.com/images/pnx.assets/1c0086b0a6e4f10fb5336b509de738ce/razer-deathadder-v2-x-hyperspeed_500x500.png" alt="Product 3" width="350px">
+            <h2>Mouse RAZER</h2>
+            <p>$39.99</p>
+            <p2>Gaming gear อุปกรณ์เกมมิ่งเกียร์เมาส์สำหรับชาวเกมเมอร์และสตรีมเมอร์<br>
+                ราคาพิเศษจากแบรนด์ชั้นนำ RAZER GAMING MOUSE(เมาส์เกมมิ่ง)<br>
+                DEATHADDER V3 PRO WIRELESS<br>
+                ความไวเมาส์:30,000 DPI<br>          
+                น้ำหนัก:63.00 g</p2>
+                <br><br>
+                <div class="yo">
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+        </div>
+        <div class="product">
+            <img src="https://nuphyth.com/cdn/shop/products/Air75-SKU-Websize_01_th0282_1800x1800.jpg?v=1691501465" alt="Product 4"width="350px">
+            <h2>Keyboard</h2>
+            <p>$69.99</p>
+            <p2>คีย์บอร์ด Akko 3087DS TKL Horizon Switch V2 Gamingคีย์บอร์ดแมคคานิคอล<br>
+                จาก Akko สุดสวยที่มาพร้อมกับขนาดTKLได้รับแรงบันดาลใจจากพระอาทิตย์ขึ้นที่กลางเส้น<br>
+                ขอบฟ้าที่ซึ่งท้องฟ้าและท้องทะเลมาบรรจบกันด้วยคีย์แคปPBTและสีสันฟ้าครามตัดเหลืองส้ม<br>
+                เหนือกว่าคีย์ตัวอื่นๆที่เคยมีมา </p2>
+                <br><br>
+                <div class="yo">
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+        </div>
+
+
+        
+<section class="shopping-basket">
+    <p2>ซื้อครบ 1000 ขึ้นไปลด 10%</p2>
+    <h2>Your Shopping Basket</h2>
+    <ul id="basket-items"></ul>
+    <div class="kkk"><button onclick="ยืนยัน">ยืนยัน</button>
+</section>
+
+<script>
+    let basketItems = [];
+
+    function addToCart(button) {
+        const productDiv = button.parentElement.parentElement;
+        const productName = productDiv.querySelector('h2').textContent;
+        const productPrice = productDiv.querySelector('p').textContent;
+        const productQuantity = productDiv.querySelector('.quantity').valueAsNumber;
+
+        const item = {
+            name: productName,
+            price: parseFloat(productPrice.substring(1)),
+            quantity: productQuantity
+        };
+
+        
+        if (item.price > 29) {
+            item.price *= 0.9; 
+        }
+
+        basketItems.push(item);
+        updateBasket();
+    }
+
+    function updateBasket() {
+        const basketList = document.getElementById('basket-items');
+        basketList.innerHTML = '';
+
+        let totalAmount = 0;
+
+        basketItems.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
+            basketList.appendChild(li);
+            totalAmount += item.price * item.quantity;
+        });
+
+        const totalLi = document.createElement('li');
+        totalLi.textContent = `Total: $${totalAmount.toFixed(2)}`;
+        basketList.appendChild(totalLi);
+    }
+</script>
+
+<script src="javascript.js"></script>
+</body>
+</div>
+
+</html>
